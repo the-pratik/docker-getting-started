@@ -56,4 +56,26 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 
 
 
+## Customs
 
+1. To use custom template instead of default provided by images `docker run -p 8080:80 -v ${pwd}:/usr/share/nginx/html nginx:alpine`
+
+2. To use volumes to store logs outside the container `docker run -p 8080:80 -v ${pwd}/logs:/var/www/logs (dockerhub-name)/(image-name):(version/tag)`
+
+3. To list containers `docker ps` (for running) / `docker ps -a` (for all)
+
+4. To list images `docker images`
+
+5. To build container `docker build -t nodeapp -f node.dockerfile .` or `docker build -t (dockerhub-name)/(image-name):(version/tag) -f node.dockerfile .`
+
+6. To remove container `docker rm (container id)` and to remove image `docker rmi (image id)`
+
+7. To run image `docker run -p 8080:80 -d (image-name):(version/tag)` or `docker run -p 3000:3000 -d (dockerhub-name)/(image-name):(version/tag)`
+
+8. To stop `docker stop (id)`
+
+9. To get logs `docker logs (id)`
+
+10. To pull `docker pull (image-name):(version/tag)` or `docker pull (dockerhub-name)/(image-name):(version/tag)`
+
+11. To push `docker push (dockerhub-name)/(image-name):(version/tag)`
