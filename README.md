@@ -56,7 +56,7 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 
 
 
-## Customs
+## Custom Commands
 
 1. To use custom template instead of default provided by images `docker run -p 8080:80 -v ${pwd}:/usr/share/nginx/html nginx:alpine`
 
@@ -79,3 +79,23 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 10. To pull `docker pull (image-name):(version/tag)` or `docker pull (dockerhub-name)/(image-name):(version/tag)`
 
 11. To push `docker push (dockerhub-name)/(image-name):(version/tag)`
+
+12. To list volumes `docker volume ls`
+
+## Network Commands
+
+1. Create a network `docker network create --driver bridge isolated_network`
+
+2. List networks `docker network ls`
+
+3. Remove network `docker network rm [network]`
+
+4. Run database container in a network `docker run -d --net=isolated_network --name=[container-name] mongo`
+
+5. Run application container in a network `docker run -d -p 3000:3000 --net=isolated_ntework --name=nodeapp imageName`
+
+6. Inspect network `docker inspect [container-id]`
+
+## Shell into a Container
+
+`docker exec -it <containerId> sh`
