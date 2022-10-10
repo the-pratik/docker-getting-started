@@ -92,7 +92,7 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 
 4. Run database container in a network `docker run -d --net=isolated_network --name=[container-name] mongo`
 
-5. Run application container in a network `docker run -d -p 3000:3000 --net=isolated_ntework --name=nodeapp imageName`
+5. Run application container in a network `docker run -d -p 3000:3000 --net=isolated_network --name=nodeapp imageName`
 
 6. Inspect network `docker inspect [container-id]`
 
