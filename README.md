@@ -115,3 +115,7 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 6. Create a tar file from image `docker save <imageName> > <tarFileName>.tar`
   
 7. Recover image from tar file `docker load -i <tarFileName>.tar`
+  
+8. Create tar file from container `docker export <customName> > <tarFileName>.tar`
+  
+9. Recover image from tar file `docker import - <customImageName> < <tarFileName>.tar`
