@@ -111,3 +111,7 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 4. Remove all unused containers `docker system prune`
 
 5. Create a new image from a container’s changes `docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]`
+  
+6. Create a tar file from image `docker save <imageName> > <tarFileName>.tar`
+  
+7. Recover image from tar file `docker load -i <tarFileName>.tar`
