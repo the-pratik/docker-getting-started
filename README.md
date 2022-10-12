@@ -99,3 +99,15 @@ Interested in learning more about Docker? Visit https://www.pluralsight.com/cour
 ## Shell into a Container
 
 `docker exec -it <containerId> sh`
+
+## Extras
+
+1. Create a volume `docker create volume <volumeName>`
+
+2. Add volume to a container at the time of creation `docker run -d -p <cp>:<hp> -v <volumeName>:<containerVolPath> --name <customName> <imageName>`
+
+3. Add volume after creation of container `docker cp <customName>:<containerVolPath> <pathToStoreVolume>`
+
+4. Remove all unused containers `docker system prune`
+
+5. Create a new image from a container’s changes `docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]`
