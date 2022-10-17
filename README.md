@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+
 # Node.js with MongoDB and Docker Demo
 
 Application demo designed to show how Node.js and MongoDB can be run in Docker containers. 
